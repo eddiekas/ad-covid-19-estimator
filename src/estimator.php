@@ -26,9 +26,8 @@ $regions = array('name' => "Africa", 'avgAge' => 19.7, 'avgDailyIncomeInUSD' => 
 $regionss = array('region' => $regions, 'periodType' => "days", 'timeToElapse' => 38,'reportedCases' => 2747,
                   'population' => 92931687, 'totalHospitalBeds' => 678874);
 
-$datas = array('data' => $regionss);
-print_r($datas);
-echo "<br>";
+$data = array('data' => $regionss);
+$datas = $data;
 
 
 //Output
@@ -39,7 +38,6 @@ $pweek = (int)($week/3);
 
 //current infection numbers
 $firstinfectionsByRequestedTime = $reportedCases * pow(2,$power) ;
-echo '<br>';
 
 
 //Current Infected Persons
@@ -72,17 +70,11 @@ $severeImpact = array('currentlyInfected' => $h, 'infectionsByRequestedTime' => 
 
 
 
-echo '<br>';
 $impactEstimate= array('impact'=> $impact);
-echo '<br>';
 
-echo '<br>';
 $severeEstimate= array('severeImpact'=> $severeImpact);
-echo '<br>';
 
-echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
-echo '<br>';
 $data= array('estimate'=> $estimate);
 $dataa = $data;
 
@@ -90,7 +82,6 @@ $dataa = $data;
 
 //current infection numbers, for a year
 $firstinfectionsByRequestedTime = $reportedCases * pow(2,$pyear) ;
-echo '<br>';
 
 
 //Current Infected Persons
@@ -123,17 +114,11 @@ $severeImpact = array('currentlyInfected' => $h, 'infectionsByRequestedTime' => 
 
 
 
-echo '<br>';
 $impactEstimate= array('impact'=> $impact);
-echo '<br>';
 
-echo '<br>';
 $severeEstimate= array('severeImpact'=> $severeImpact);
-echo '<br>';
 
-echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
-echo '<br>';
 $data= array('estimate'=> $estimate);
 $datab = $data;
 
@@ -142,7 +127,6 @@ $datab = $data;
 
 //current infection numbers, for a month
 $firstinfectionsByRequestedTime = $reportedCases * pow(2,$pmonths) ;
-echo '<br>';
 
 
 //Current Infected Persons
@@ -175,17 +159,11 @@ $severeImpact = array('currentlyInfected' => $h, 'infectionsByRequestedTime' => 
 
 
 
-echo '<br>';
 $impactEstimate= array('impact'=> $impact);
-echo '<br>';
 
-echo '<br>';
 $severeEstimate= array('severeImpact'=> $severeImpact);
-echo '<br>';
 
-echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
-echo '<br>';
 $data= array('estimate'=> $estimate);
 $datac = $data;
 
@@ -193,7 +171,6 @@ $datac = $data;
 
 //current infection numbers, for a week
 $firstinfectionsByRequestedTime = $reportedCases * pow(2,$pweek) ;
-echo '<br>';
 
 
 //Current Infected Persons
@@ -226,17 +203,11 @@ $severeImpact = array('currentlyInfected' => $h, 'infectionsByRequestedTime' => 
 
 
 
-echo '<br>';
 $impactEstimate= array('impact'=> $impact);
-echo '<br>';
 
-echo '<br>';
 $severeEstimate= array('severeImpact'=> $severeImpact);
-echo '<br>';
 
-echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
-echo '<br>';
 $data= array('estimate'=> $estimate);
 $datad= $data;
 
@@ -245,10 +216,12 @@ function covid19ImpactEstimator($data){
 
     return $data;
 }
+covid19ImpactEstimator($datas);
 covid19ImpactEstimator($dataa);
 covid19ImpactEstimator($datab);
 covid19ImpactEstimator($datac);
 covid19ImpactEstimator($datad);
 
+echo '<pre>';
 
 ?>
