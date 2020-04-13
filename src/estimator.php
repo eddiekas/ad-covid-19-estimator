@@ -168,7 +168,6 @@ $data= array('estimate'=> $estimate);
 $datac = $data;
 
 
-
 //current infection numbers, for a week
 $firstinfectionsByRequestedTime = $reportedCases * pow(2,$pweek) ;
 
