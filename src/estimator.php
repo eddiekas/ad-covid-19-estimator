@@ -1,5 +1,6 @@
 <?php
 
+
 //Challenge One
 
 // 'region'
@@ -16,6 +17,7 @@ $totalHospitalBeds = 678874;
 $year = 365;
 $month= 30;
 $week = 7;
+
 
 echo '<pre>';
 
@@ -82,9 +84,16 @@ echo '<br>';
 echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
-$estimates= array('estimate'=> $estimate);
-print_r($estimates);
-echo '<br>';
+$data= array('estimate'=> $estimate);
+
+
+function covid19ImpactEstimator($data){
+    print_r($data);
+
+    return $data;
+}
+covid19ImpactEstimator($data);
+
 
 
 
@@ -135,9 +144,14 @@ echo '<br>';
 echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
-$estimates= array('estimate'=> $estimate);
-print_r($estimates);
-echo '<br>';
+$data= array('estimate'=> $estimate);
+
+function covid19ImpactEstimators($data){
+    print_r($data);
+
+    return $data;
+}
+covid19ImpactEstimators($data);
 
 
 
@@ -187,9 +201,16 @@ echo '<br>';
 echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
-$estimates= array('estimate'=> $estimate);
-print_r($estimates);
-echo '<br>';
+$data= array('estimate'=> $estimate);
+
+
+function covid19ImpactEstimatorss($data){
+    print_r($data);
+
+    return $data;
+}
+covid19ImpactEstimatorss($data);
+
 
 //current infection numbers, for a week
 $firstinfectionsByRequestedTime = $reportedCases * pow(2,$pweek) ;
@@ -237,9 +258,15 @@ echo '<br>';
 echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
-$estimates= array('estimate'=> $estimate);
-print_r($estimates);
-echo '<br>';
+$data= array('estimate'=> $estimate);
+
+
+function covid19ImpactEstimatorsss($data){
+    print_r($data);
+
+    return $data;
+}
+covid19ImpactEstimatorsss($data);
 
 
 ?>
