@@ -18,7 +18,6 @@ $year = 365;
 $month= 30;
 $week = 7;
 
-
 echo '<pre>';
 
 //Array of the Input data
@@ -85,16 +84,7 @@ echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
 $data= array('estimate'=> $estimate);
-
-
-function covid19ImpactEstimator($data){
-    print_r($data);
-
-    return $data;
-}
-covid19ImpactEstimator($data);
-
-
+$dataa = $data;
 
 
 
@@ -145,13 +135,8 @@ echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
 $data= array('estimate'=> $estimate);
+$datab = $data;
 
-function covid19ImpactEstimators($data){
-    print_r($data);
-
-    return $data;
-}
-covid19ImpactEstimators($data);
 
 
 
@@ -202,14 +187,8 @@ echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
 $data= array('estimate'=> $estimate);
+$datac = $data;
 
-
-function covid19ImpactEstimatorss($data){
-    print_r($data);
-
-    return $data;
-}
-covid19ImpactEstimatorss($data);
 
 
 //current infection numbers, for a week
@@ -259,14 +238,17 @@ echo '<br>';
 $estimate = array('impact'=> $impact, 'severeImpact'=> $severeImpact);
 echo '<br>';
 $data= array('estimate'=> $estimate);
+$datad= $data;
 
-
-function covid19ImpactEstimatorsss($data){
+function covid19ImpactEstimator($data){
     print_r($data);
 
     return $data;
 }
-covid19ImpactEstimatorsss($data);
+covid19ImpactEstimator($dataa);
+covid19ImpactEstimator($datab);
+covid19ImpactEstimator($datac);
+covid19ImpactEstimator($datad);
 
 
 ?>
